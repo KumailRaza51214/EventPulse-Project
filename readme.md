@@ -5,11 +5,11 @@ EventPulse is a simple and user-friendly web application that helps users explor
 📌 Features
 1. Home Page
 
-Hero banner with CTA button
+Hero banner
 
 Upcoming events section
 
-Volunteer invitation section
+Volunteer section
 
 Footer with contact details
 
@@ -27,13 +27,11 @@ Volunteer registration form
 
 Form validation using JavaScript
 
-Clean UI with professional layout
+Clean layout
 
 4. About Page
 
 Overview of EventPulse
-
-Team/members section (optional)
 
 Mission & vision statements
 
