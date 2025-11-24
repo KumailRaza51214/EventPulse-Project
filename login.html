@@ -7,9 +7,8 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body style="background-color: grey;">
 
-  <!-- ======= HEADER ======= -->
   <header>
     <div class="logo">EventPulse</div>
     <nav>
@@ -19,65 +18,44 @@
         <li><a href="volunteer.html">Volunteer</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.html" class="btn">Login</a></li>
+        <li><a href="login.html" >Login</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ======= LOGIN SECTION ======= -->
   <section class="login-section">
     <div class="login-container">
       <h2>Welcome Back</h2>
-      <p>Login to manage your events and community activities</p>
+      <p>Login to manage your events and community activities</p><br> 
 
       <form class="login-form" onsubmit="return validateLoginForm()">
-        <div class="input-group">
+        <div >
           <label for="email">Email Address</label>
           <input type="email" id="email" placeholder="Enter your email" required>
         </div>
 
-        <div class="input-group">
+        <div >
           <label for="password">Password</label>
           <input type="password" id="password" placeholder="Enter your password" required>
         </div>
 
-        <div class="remember-forgot">
-          <label><input type="checkbox" id="remember"> Remember me</label>
+        <div >
+          <label><input type="checkbox" id="remember">Remember me </label>
+          <br>  
           <a href="#">Forgot Password?</a>
         </div>
 
-        <button type="submit" class="btn login-btn">Login</button>
+        <button type="submit" class="btn">Login</button>
 
-        <p class="register-text">Don’t have an account? <a href="signup.html">Register here</a></p>
+        <p >Don’t have an account? <a href="signup.html">Register here</a></p>
       </form>
     </div>
   </section>
 
-  <!-- ======= FOOTER ======= -->
-  <footer>
-    <div class="footer-bottom">
-      <p>© 2025 EventPulse. All Rights Reserved.</p>
-    </div>
+  <footer class="footer">
+    <div class="footer-box">
+    <p class="footer-bottom">© 2025 EventPulse. All Rights Reserved.</p>
   </footer>
-
-  <script>
-    // Simple JS validation
-    function validateLoginForm() {
-      const email = document.getElementById("email").value.trim();
-      const password = document.getElementById("password").value.trim();
-
-      if (email === "" || password === "") {
-        alert("Please fill in both fields.");
-        return false;
-      }
-      if (!email.includes("@")) {
-        alert("Please enter a valid email address.");
-        return false;
-      }
-      alert("Login successful!");
-      return true;
-    }
-  </script>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
