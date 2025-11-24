@@ -7,95 +7,59 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: grey;">
 
-  <!-- ======= HEADER ======= -->
   <header>
     <div class="logo">EventPulse</div>
     <nav>
       <ul>
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Volunteer</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="login.html" class="btn">Login</a></li>
+         <li><a href="homepage.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" >Login</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ======= SIGNUP SECTION ======= -->
   <section class="login-section">
     <div class="login-container">
       <h2>Create an Account</h2>
       <p>Join EventPulse!</p>
 
       <form class="login-form" onsubmit="return validateSignupForm()">
-        <div class="input-group">
+        <div >
           <label for="fullname">Full Name</label>
           <input type="text" id="fullname" placeholder="Enter your name" required>
         </div>
 
-        <div class="input-group">
+        <div >
           <label for="email">Email Address</label>
           <input type="email" id="email" placeholder="Enter your email" required>
         </div>
 
-        <div class="input-group">
+        <div >
           <label for="password">Password</label>
           <input type="password" id="password" placeholder="Enter your password" required>
         </div>
 
-        <div class="input-group">
+        <div >
           <label for="confirmPassword">Confirm Password</label>
           <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
         </div>
 
-        <button type="submit" class="btn login-btn">Sign Up</button>
+        <button class="btn" type="submit" >Sign Up</button>
 
-        <p class="register-text">Already have an account? <a href="login.html">Login here</a></p>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
       </form>
     </div>
   </section>
 
-  <!-- ======= FOOTER ======= -->
-  <footer>
-    <div class="footer-bottom">
-      <p>© 2025 EventPulse. All Rights Reserved.</p>
-    </div>
+  <footer class="footer">
+    <div class="footer-box">
+    <p class="footer-bottom">© 2025 EventPulse. All Rights Reserved.</p>
   </footer>
-
-  <script>
-    // Signup validation
-    function validateSignupForm() {
-      const name = document.getElementById("fullname").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const password = document.getElementById("password").value.trim();
-      const confirmPassword = document.getElementById("confirmPassword").value.trim();
-
-      if (name === "" || email === "" || password === "" || confirmPassword === "") {
-        alert("Please fill in all fields.");
-        return false;
-      }
-
-      if (!email.includes("@")) {
-        alert("Please enter a valid email address.");
-        return false;
-      }
-
-      if (password.length < 6) {
-        alert("Password must be at least 6 characters long.");
-        return false;
-      }
-
-      if (password !== confirmPassword) {
-        alert("Passwords do not match!");
-        return false;
-      }
-
-      alert("Signup successful!");
-      return true;
-    }
-  </script>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
