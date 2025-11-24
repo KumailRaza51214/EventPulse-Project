@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="min-height:100vh; display:flex; flex-direction:column; margin:0;">
 
 <header>
   <div class="logo">EventPulse</div>
@@ -15,10 +15,10 @@
     <ul>
       <li><a href="homepage.html">Home</a></li>
       <li><a href="events.html">Events</a></li>
-      <li><a class="active" href="volunteer.html">Volunteer</a></li>
+      <li><a href="volunteer.html">Volunteer</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a class="btn" href="login.html">Login</a></li>
+      <li><a href="login.html">Login</a></li>
     </ul>
   </nav>
 </header>
@@ -29,21 +29,22 @@
 </section>
 
 <section class="volunteer-form-section">
-  <form class="volunteer-form">
+  <form class="volunteer-form" style="max-width: 400px; margin: auto; text-align: center;">
 
-    <div class="input-group">
+    <div>
       <label>Name</label>
-      <input type="text" required>
+      <input type="text" required  style="width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 6px;">
     </div>
 
-    <div class="input-group">
+    <div>
       <label>Email</label>
-      <input type="email" required>
+      <input type="email" required  style="width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 6px;">
     </div>
 
-    <div class="input-group">
-      <label>Area of Interest</label>
-      <input type="text" required>
+    <div>
+      <label>Area of interest   </label>
+      <textarea rows="5"  required
+            style="width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 6px; resize: none;"></textarea>
     </div>
 
     <button type="submit" class="btn">Submit</button>
@@ -51,11 +52,10 @@
   </form>
 </section>
 
-<footer>
-  <div class="footer-bottom">
-    <p>© 2025 EventPulse</p>
-  </div>
+<footer style="margin-top:auto; background:#00695c; color:white; text-align:center; padding:15px 0;">
+  © 2025 EventPulse. All Rights Reserved.
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
