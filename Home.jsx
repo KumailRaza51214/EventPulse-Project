@@ -8,7 +8,7 @@ function Home() {
     "Your community awaits — explore events, volunteer.",
     "Be part of something meaningful with EventPulse.",
     "Empower your journey — connect through community and purpose."
-  ][messages];
+  ];
 
   const [text, setText] = useState(messages[0]);
 
