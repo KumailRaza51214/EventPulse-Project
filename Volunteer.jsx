@@ -1,5 +1,6 @@
 function Volunteer() {
-  const submitHandler = () => {
+  const submitHandler = (e) => {
+    e.preventDefault(e);
     alert("Volunteer form submitted successfully!");
   };
 
@@ -80,4 +81,5 @@ function Volunteer() {
 }
 
 export default Volunteer;
+
   
