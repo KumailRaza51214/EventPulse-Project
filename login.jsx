@@ -1,7 +1,8 @@
 import { Link, Router } from "react-router-dom";
 function Login() {
-    const submitHandler = () => {
-      alert("Login submitted ");
+    const submitHandler = (e) => {
+        e.preventDefault();
+        alert("Login submitted ");
     };
   
     return (
@@ -26,3 +27,4 @@ function Login() {
   
   export default Login;
   
+
