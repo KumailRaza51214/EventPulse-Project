@@ -166,7 +166,8 @@
     color: white;
     padding: 30px 20px;
     text-align: center;
-  }    
+  }
+    
   .footer-box div {
     margin-bottom: 20px;
   }
@@ -183,6 +184,9 @@
   .footer-box a:hover {
     color: black;
   }
+  
+  
+
   /*--------------------design responsive to small screens---------------------------*/
 
   @media (max-width: 768px) {
@@ -190,18 +194,22 @@
       flex-direction: column;
       padding: 15px 30px;
     }
+
     nav ul {
       flex-wrap: wrap;
       justify-content: center;
       gap: 12px;
     }
+
     .events-list {
       padding: 30px 5%;
     }
+
     .event-card {
       width: 90%;
       max-width: 350px;
     }
+
     .footer-container {
       flex-direction: column;
       text-align: center;
