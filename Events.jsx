@@ -18,7 +18,27 @@ function Events() {
         image:
           "https://images.unsplash.com/photo-1519681393784-d120267933ba"
       },
-      
+      {
+        title: "New Year Celebration 2026",
+        date: "Jan 15, 2026",
+        location: "Giga Mall",
+        image:
+          "https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+      },
+      {
+        title: "Charity Clothes Distribution",
+        date: "April 23, 2026",
+        location: "Saddar Rawalpindi",
+        image:
+          "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca"
+      },
+      {
+        title: "Winter Festival",
+        date: "Dec 20, 2026",
+        location: "Bahria Town Phase 7",
+        image:
+          "https://images.unsplash.com/photo-1530103862676-de8c9debad1d"
+      }
   ];
 
   const handleRSVP = (title) => {
@@ -59,3 +79,4 @@ function Events() {
 }
 
 export default Events;
+
