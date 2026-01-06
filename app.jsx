@@ -1,38 +1,35 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-/*turn on routing, container to hold all possible pages(routes) ,matching url 2 component  /*library*/ 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-
-import Home from "./pages/Home";
-import Events from "./pages/Events";
-import Volunteer from "./pages/Volunteer";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-
-function App() {
+function About() {
   return (
-    <BrowserRouter>
-  <div >
-    <Header />
+    <>
+      <section>
+        <h1>About EventPulse</h1>
+        <p>Your gateway to discovering and participating in community events.</p>
+      </section>
 
-    <div >
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/volunteer" element={<Volunteer />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
-    </div>
+      <section>
+        <div>
+          <div>
+            <h2>Our Purpose</h2>
+            <p>
+              EventPulse connects people with meaningful community activities
+              such as social gatherings, charity events, workshops, festivals,
+              and more.
+            </p>
+          </div>
 
-    <Footer />
-  </div>
-</BrowserRouter>
+          <div>
+            <h2>Why We Do It?</h2>
+            <ul>
+              <li>Encourage community involvement</li>
+              <li>Make event participation easy</li>
+              <li>Support volunteer culture</li>
+              <li>Connect people with shared interests</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 
-export default App;
+export default About;
